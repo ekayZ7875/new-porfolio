@@ -404,9 +404,16 @@ section { padding: 1.8rem 1.5rem; max-width: var(--max-width); margin: 0 auto; }
   background: var(--bg-white); border: 1px solid var(--border);
   border-radius: var(--radius); padding: 1rem 1.1rem;
   text-decoration: none; box-shadow: var(--shadow-sm);
-  transition: box-shadow 0.25s; display: block;
+  transition: box-shadow 0.25s; display: flex; align-items: center; gap: 1rem;
 }
 .contact-item:hover { box-shadow: var(--shadow-md); }
+.contact-icon {
+  display: flex; align-items: center; justify-content: center;
+  color: var(--accent);
+}
+.contact-content {
+  display: flex; flex-direction: column;
+}
 .contact-label {
   font-size: 0.58rem; font-weight: 600; color: var(--text-muted);
   text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 0.2rem;
